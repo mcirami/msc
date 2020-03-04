@@ -1,0 +1,264 @@
+#global_footer {
+	background: $veryDarkBlue;
+	padding: 20px 0;
+	
+	@include media($mobile){
+		text-align: center;
+	}
+	
+	h3 {
+		color: $white;
+		
+		@include media($tablet){
+			font-size: 16px;
+		}
+		
+		@include media($mobile){
+			margin: 10px 0 5px;
+		}
+	}
+	
+	li, a {
+		color: $grayText;
+		
+		@include media($tablet){
+			font-size: 14px;
+		}
+	}
+	
+	a {
+		&:hover {
+			color: $white;
+		}
+	}
+	
+	.copy {
+		color: $white;
+		text-align: center;
+		padding-top: 40px;
+		font-size: 12px;
+		
+		@include media($mobile){
+			font-size: 10px
+		}
+		
+		a {
+			color: $white;
+			font-size: 14px;
+			
+			@include media($mobile){
+				font-size: 12px;
+			}
+		}
+	}
+	
+	.column {
+		
+		&:first-child {
+			width: 18%;
+			float: left;
+			
+			@include media($mobile){
+				width: 100%;
+			}
+		}
+		
+		&:nth-child(2) {
+			width: 22%;
+			float: left;
+			
+			@include media($mobile){
+				width: 100%;
+			}
+		}
+		
+		&:nth-child(3) {
+			width: 32%;
+			float: left;
+			
+			@include media($tablet){
+				width: 28%;
+			}
+			
+			@include media($mobile){
+				width: 100%;
+			}
+		}
+		
+		&:last-child {
+			width: 26%;
+			float: right;
+			
+			@include media($tablet){
+				width: 30%;
+			}
+			
+			@include media($mobile){
+				width: 100%;
+			}
+		}
+		
+		ul {
+			@include span-columns(12);
+			
+			li {
+				@include span-columns(12);
+				padding-left: 20px;
+				font-family: 'Lato Regular';
+				
+				@include media($mobile){
+					width: auto;
+					display: inline-block;
+					float: none;
+					padding-left: 8px;
+				}
+				
+				&:before {
+	                content: '';
+	                position: absolute;
+	                width: 7px;
+	                height: 7px;
+	                left: 0;
+	                top: 7px;
+	                border-top: 5px solid transparent;
+					border-bottom: 5px solid transparent;
+	                border-left: 5px solid $grayText;
+	                
+	                @include media($mobile){
+	                	content: none;
+	                }
+	            }
+	            
+	            a {
+		            &:hover {
+			            &:before {
+				            content: '';
+			                position: absolute;
+			                width: 7px;
+			                height: 7px;
+			                left: -20px;
+			                top: 5px;
+			                border-top: 5px solid transparent;
+							border-bottom: 5px solid transparent;
+			                border-left: 5px solid $white;
+			                
+			                @include media($mobile){
+			                	content: none;
+			                }
+			            }
+		            }
+	            }
+
+			}
+		}
+		
+		.contact_info {
+			@include span-columns(12);
+			
+			a {
+				@include span-columns(12);
+				color: $white;
+				padding-left: 45px;
+				margin-bottom: 20px;
+				
+				@include media($tablet){
+					padding-left: 30px;
+				}
+				
+				@include media($mobile){
+					float: none;
+					width: auto;
+					display: inline-block;
+					margin-bottom: 8px;
+				}
+				
+				&:hover {
+					color: $grayText;
+				}
+				
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 32px;
+					height: 32px;
+				}
+				
+				&.skype {
+					&:before {
+						background: url('../images/icon-skype.png') no-repeat;
+						
+						@include media($tablet){
+							background-size: 80%;
+						}
+					}
+					
+					&:hover {
+						&:before {
+							background: url('../images/icon-skype-hover.png') no-repeat;
+							
+							@include media($tablet){
+								background-size: 80%;
+							}
+						}
+					}
+				}
+				
+				&.email {
+					margin-bottom: 15px;
+					
+					@include media($mobile){
+						margin-bottom: 8px;
+					}
+					
+					&:before {
+						background: url('../images/icon-envelope.png') no-repeat;
+						height: 16px;
+						width: 24px;
+						top: 6px;
+						left: 5px;
+						
+						@include media($tablet){
+							background-size: 80%;
+						}
+					}
+					
+					&:hover {
+						&:before {
+							background: url('../images/icon-envelope-hover.png') no-repeat;
+							
+							@include media($tablet){
+								background-size: 80%;
+							}
+						}
+					}
+				}
+				
+				&.phone {
+					&:before {
+						background: url('../images/icon-phone.png') no-repeat;
+						width: 22px;
+						height: 25px;
+						left: 3px;
+						
+						@include media($tablet){
+							background-size: 80%;
+						}
+					}
+					
+					&:hover {
+						&:before {
+							background: url('../images/icon-phone-hover.png') no-repeat;
+							
+							@include media($tablet){
+								background-size: 80%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

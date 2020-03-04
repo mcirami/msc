@@ -1,0 +1,96 @@
+// mixins
+
+@mixin clearRow($nth) {
+	&:nth-child(#{$nth}+1) {
+		clear: both;
+	}
+}
+
+// Omega Reset
+@mixin omega-reset($nth, $columns) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter($columns); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
+// Vertical Align
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@mixin horizontal-align {
+	position: relative;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+@mixin latoReg {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+@mixin latoDark {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+@mixin latoBold {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+@mixin sansReg {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+}
+
+@mixin sansBold {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+}
+
+@mixin fira {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+}
+
+@mixin firaBold {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 700;
+}
+
+@mixin firaItalic {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+@mixin mon {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+
+@mixin monBold {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Butler Regular';
+	src: local('Bulter_Regular.otf'),
+	url("fonts/Butler_Regular.otf") format('truetype');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Butler Ultra Light';
+	src: local('Bulter_Ultra_Light.otf'),
+	url("fonts/Butler_Ultra_Light.otf") format('truetype');
+	font-weight: 100;
+}
+
