@@ -31,12 +31,38 @@ function boiler_content_nav( $nav_id ) {
 
 	?>
 	<nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?>">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'boiler' ); ?></h1>
+		<!--<h1 class="screen-reader-text"><?php /*_e( 'Post navigation', 'boiler' ); */?></h1>-->
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
-		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'boiler' ) . '</span> %title' ); ?>
-		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'boiler' ) . '</span>' ); ?>
+		<div class="previous_links">
+			<?php previous_post_link(
+				'<div class="nav-previous top">
+					%link
+				</div>',
+				'<span class="underline">Previous</span><span class="meta-nav">' . _x( '', 'Previous post link', 'boiler' ) . '</span>' );
+			?>
+
+			<?php previous_post_link(
+				'<div class="nav-previous">
+					%link
+				</div>',
+				'<span class="meta-nav">' . _x( '', 'Previous post link', 'boiler' ) . '</span> %title' );
+			?>
+		</div>
+
+		<div class="next_links">
+			<?php next_post_link(
+				'<div class="nav-next top">
+						%link
+						</div>', '<span class="underline">Next</span> <span class="meta-nav">' . _x( '', 'Next post link', 'boiler' ) . '</span>' );
+			?>
+			<?php next_post_link(
+					'<div class="nav-next">
+						%link
+						</div>', '%title <span class="meta-nav">' . _x( '', 'Next post link', 'boiler' ) . '</span>' );
+			?>
+		</div>
 
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 

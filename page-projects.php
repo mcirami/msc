@@ -11,7 +11,7 @@
 get_header(); ?>
 
 	<?php
-		$args = array ('post_type' => 'projects');
+		$args = array ('post_type' => 'projects', 'posts_per_page'=> -1);
 	
 		$projects = new WP_Query($args);
 	?>
@@ -29,17 +29,14 @@ get_header(); ?>
 		<div class="projects_section inner_page_wrap">
 			<div class="container">
 				<h2><span class="underline">My</span> Portfolio</h2>
-				
-				<?php 
-					$count = 0; 
+
+				<?php
+					$count = 0;
 					$gallery = 0;
 				?>
 				<div class="projects_wrap">
 					<?php while( $projects->have_posts() ) : $projects->the_post(); ?>
 						<?php $gallery++; ?>
-						<?php //if ($count == 0) : ?>
-							<!--<div class="row">-->
-						<?php //endif; ?>
 	
 							<?php $image = get_field('project_thumb');
 								$size = 'thumbnail';
@@ -58,30 +55,27 @@ get_header(); ?>
 									 <!--
 									<?php if (get_field('link')) : ?>
 											<a class="text_link" target="_blank" href="<?php the_field('link'); ?>"><?php the_field('link_text'); ?></a>
-									<?php else : ?>	
+									<?php else : ?>
 											<a class="text_link" href="#"><?php the_field('link_text'); ?></a>
 									<?php endif; ?>-->
 									<div class="popup">
-									
+
 										<?php if( have_rows('screenshots') ): ?>
-										
+
 											<?php while ( have_rows('screenshots') ) : the_row(); ?>
-												
+
 											<?php $image = get_sub_field('image'); ?>
-										
+
 										    	<a class="fancybox" rel="<?php echo 'gallery'.$gallery; ?>" href="<?php echo $image['url'];  ?>" title="<?php the_sub_field('slide_title'); ?>">
 										</a>
-										
+
 										    <?php endwhile; ?>
-										
+
 										<?php endif; ?>
-										
+
 									</div><!-- popup -->
 								</div><!-- column -->
-							<?php //if ($count == 2) : ?>
-							<!--	</div><!-- row -->	
-							<?php //endif; ?>
-							<?php //$count = ($count+1) % 3; ?>
+
 					<?php endwhile; ?>
 					
 					<?php wp_reset_query(); ?>

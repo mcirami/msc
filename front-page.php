@@ -8,7 +8,13 @@
  * @package boiler
  */
 
-get_header(); ?>
+get_header();
+
+$args = array( 'post_type' => 'projects', 'posts_per_page' => - 1 );
+
+$projects = new WP_Query( $args );
+
+?>
 	<section class="home">		
 		<div class="top_section">
 			<div class="top_wrap">
@@ -43,38 +49,50 @@ get_header(); ?>
 				</div>
 			</div>
 		</div> three column section -->
-		<div class="recent_work full_width">
+		<div class="full_width column_section">
 			<div class="container">
-				<h2><span class="underline">My</span> Recent Work</h2>
-				<div class="column_wrap full_width">
-					<div class="column">
-						<img src="<?php echo bloginfo('template_url'); ?>/images/recent-alhrabosky.jpg" />
-					</div>
-					<div class="column">
-						<img src="<?php echo bloginfo('template_url'); ?>/images/recent-daric.jpg" />
-					</div>
-					<div class="column">
-						<img src="<?php echo bloginfo('template_url'); ?>/images/recent-opentab.jpg" />
-					</div>
-					<div class="column">
-						<img src="<?php echo bloginfo('template_url'); ?>/images/recent-island.jpg" />
-					</div>
-					<div class="column">
-						<img src="<?php echo bloginfo('template_url'); ?>/images/recent-traffic-masters.jpg" />
-					</div>
-					<div class="column">
-						<img src="<?php echo bloginfo('template_url'); ?>/images/recent-kilz.jpg" />
-					</div>
-					<div class="column">
-						<img src="<?php echo bloginfo('template_url'); ?>/images/recent-gotahoe.jpg" />
-					</div>
-					<div class="column">
-						<img src="<?php echo bloginfo('template_url'); ?>/images/recent-leadmax.jpg" />
-					</div>
-				</div>
-                <div class="button_wrap">
-                    <a class="button" href="/portfolio">View All Projects</a>
-                </div>
+				<h2><span class="underline">My</span> Portfolio</h2>
+				<h3>Click on Project To Find Out More More</h3>
+				<section class="projects">
+					<div class="projects_section">
+
+						<?php
+						$count = 0;
+						$gallery = 0;
+						?>
+						<div class="projects_wrap">
+							<?php while( $projects->have_posts() ) : $projects->the_post(); ?>
+								<?php $gallery++; ?>
+
+								<?php $image = get_field('project_thumb');
+								$size = 'thumbnail';
+								$thumb = $image['sizes'][ $size ];
+								?>
+
+								<div class="column_project">
+									<div class="content">
+										<?php
+											$link = get_permalink();
+										?>
+
+										<a class="project_thumb" href="<?php echo $link; ?>">
+											<img src="<?php echo $thumb; ?>" />
+											<div class="text_wrap">
+												<h4><?php the_field('project_title'); ?></h4>
+												<p>Click To See More</p>
+											</div>
+										</a>
+									</div>
+
+								</div><!-- column -->
+
+							<?php endwhile; ?>
+
+							<?php wp_reset_query(); ?>
+						</div> <!-- projects wrap -->
+
+					</div><!-- projects section -->
+				</section>
 			</div><!-- .container -->
 		</div>
 		<div class="skills_section">

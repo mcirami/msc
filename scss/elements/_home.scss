@@ -122,34 +122,171 @@
 			}
 		}
 	}
-	
-	.recent_work {
+
+	.column_section {
 		padding: 40px 0;
-		
-		.column_wrap {
-			margin-top: 40px;
-		}
-		
-		.column {
-			width: 24.24%;
-			float: left;
-			margin-right: 1%;
-			margin-bottom: 10px;
-			
-			&:nth-child(4n + 0) {
-				margin-right: 0;
+
+		.projects {
+			@include span-columns(12);
+			background-color: $lightGray;
+			text-align: center;
+
+			.projects_section {
+				@include span-columns(12);
+				padding-bottom: 40px;
+				background: $white;
+
+				h2 {
+					margin-bottom: 65px;
+					font-size: 54px;
+
+					@include media($tablet){
+						font-size: 42px;
+					}
+
+					@include media($mobile){
+						font-size: 38px;
+						margin-bottom: 50px
+					}
+				}
+
+				.projects_wrap {
+					  @include span-columns(12);
+				  }
+
+				.column_project {
+					width: 24.1%;
+					float: left;
+					margin-right: 1.2%;
+					margin-bottom: 10px;
+
+					@include media($tablet){
+						width: 32.5%;
+					}
+
+					@include media($mobile){
+						width: 49.4%;
+						margin-bottom: 5px;
+					}
+
+					&:nth-child(4n + 0) {
+						margin-right: 0;
+
+						@include media($tablet){
+							margin-right: 1.2%;
+						}
+					}
+
+					&:nth-child(3n + 0) {
+						@include media($tablet){
+							margin-right: 0;
+						}
+
+						@include media($mobile){
+							margin-right: 1.2%
+						}
+					}
+
+					&:nth-child(2n + 0) {
+						@include media($mobile){
+							margin-right: 0;
+						}
+					}
+
+
+					.content {
+						@include span-columns(12);
+						transition: all 0.5s;
+
+						&:hover {
+							box-shadow: 0 0 25px 14px rgba(0,0,0,.5);
+							transform: scale(1.05);
+							z-index: 2;
+
+							.text_wrap {
+								display: none;
+							}
+						}
+					}
+
+
+					.text_wrap {
+						display:none;
+						position: absolute;
+						bottom: 40px;
+						right: 20px;
+						text-align:right;
+
+						h4 {
+							display:block;
+							width: 100%;
+							font-size: 20px;
+							position: relative;
+							z-index: 1;
+							color: $red;
+							font-weight: 700;
+							line-height: 1;
+							margin: 0 0 10px 0;
+							text-transform: uppercase;
+
+							@include media($tablet){
+								font-size: 32px;
+							}
+
+							@include media($mobile){
+								font-size: 5.2vw;
+							}
+						}
+
+						p {
+							display:block;
+							width: 100%;
+							font-size: 14px;
+							position: relative;
+							z-index: 1;
+							color: $white;
+							font-weight: 700;
+							line-height: 1;
+							margin: 0;
+						}
+					}
+
+					a {
+						display: block;
+						width: 100%;
+						float: left;
+						height: 100%;
+
+						&.project_thumb {
+
+							&:hover {
+
+								&:before {
+									content: '';
+									position: absolute;
+									width: 100%;
+									height: 100%;
+									background: rgba(20,62,87,.9);
+									top: 0;
+									left: 0;
+									z-index: 1;
+								}
+
+								.text_wrap {
+									display: block;
+								}
+
+							}
+						}
+					}
+				}
 			}
 		}
 
-        .button {
-            border: 1px solid $darkBlue;
-            color: $darkBlue;
+		.popup {
+			display: none;
+		}
 
-            &:hover {
-                background: $darkBlue;
-                color: $white;
-            }
-        }
 	}
 	/*
 	.three_column_section {
@@ -441,20 +578,20 @@
 				font-size: 14px;
 			}
 		}
-		
+
 		.form_wrap {
 			position: absolute;
 			bottom: 0;
 			width: 85%;
-			
+
 			@include media($tablet){
 				position: relative;
 				width: 100%;
 			}
-			
+
 			#FSContact2 {
 				@include span-columns(12);
-				
+
 				#fscf_div_field2_0 {
 
 					&:before {
@@ -467,7 +604,7 @@
 						top: 16px;
 					}
 				}
-				
+
 				#fscf_div_field2_1 {
 					&:before {
 						content: '';
@@ -479,7 +616,7 @@
 						top: 16px;
 					}
 				}
-				
+
 				#fscf_div_field2_3 {
 					&:before {
 						content: '';
@@ -492,7 +629,7 @@
 					}
 				}
 			}
-			
+
 			input {
 				background: transparent;
 				border-top: none;
@@ -502,7 +639,7 @@
 				padding: 10px 10px 10px 24px;
 				margin-bottom: 40px;
 			}
-			
+
 			textarea {
 				background: transparent;
 				border-top: none;
@@ -512,7 +649,7 @@
 				padding: 10px 10px 10px 24px;
 				margin-bottom: 20px;
 			}
-			
+
 			input[type="submit"] {
 				width: 100%;
 				display: block;
@@ -525,28 +662,28 @@
 				text-transform: uppercase;
 				border: 1px solid $white;
 				text-align: center;
-									
+
 				@include media($tablet){
 					padding: 12px 0;
 				}
-				
+
 				@include media($mobile){
 					font-size: 14px;
 					padding: 10px 0;
 				}
-				
+
 				@include media($smallMobile){
 					padding: 8px 0;
 					font-size: 13px;
 				}
-			
+
 				&:hover {
 					color: $darkBlue;
 					background: $white;
 				}
 
 			}
-			
+
 		}
 	}
 	/*
