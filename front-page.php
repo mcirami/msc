@@ -104,7 +104,7 @@ $projects = new WP_Query( $args );
 							<img src="<?php echo bloginfo('template_url'); ?>/images/icon-computer.png" />
 							<h3>Website and Visual Design</h3>
 						</div>
-						<div class="column_content">
+						<div class="column_content animated slideInLeft">
 							<p>Fully responsive websites designed to look great and function properly on all devices and any screen size.</p>
                             <p>The importance of having a clean, easy to use interface that is effective in meeting the users needs and at the same time displaying their vision in a stand out way.</p>
                             <h4>Simple, distinctive and effective.</h4>
@@ -149,7 +149,7 @@ $projects = new WP_Query( $args );
 							<img src="<?php echo bloginfo('template_url'); ?>/images/icon-html.png" />
 							<h3>Front & Back End Development</h3>
 						</div>
-						<div class="column_content">
+						<div class="column_content animated slideInRight">
                             <p>Web development is always evolving quickly. Keeping up with the latest technologies is and will always be a part of the job.</p>
                             <p>Getting to know the newest methods and at the same time getting better at the ones that are already relevant is something a developer must learn how to balance. However while new technologies come and go, the essentials of web development will basically remain the same.</p>
                             <p>I will mold your design into a functional website using the newest versions of HTML, CSS, Javascript, PHP and more. Depending on your needs, wants and desires there's no obstacle that can't be overcome when it comes to developing.</p>

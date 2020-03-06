@@ -393,7 +393,7 @@
 
 
 
-(function($) {
+
 //CSS3 Animate-it
 $('.animatedParent').appear();
 $('.animatedClick').click(function(){
@@ -476,8 +476,6 @@ $(document.body).on('appear', '.animatedParent', function(e, $affected){
    }
  });
 
- $(window).load(function(){
+ $(window).on('load',function(){
   $.force_appear();
  });
-
-})(jQuery);

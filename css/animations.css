@@ -464,7 +464,7 @@
 * ShakeUp *
 ********/
 @-webkit-keyframes shakeUp { 
-    0%, 100% {-webkit-transform: translateX(0);} 
+    0%, 100% {-webkit-transform: translateY(0);} 
     10%, 30%, 50%, 70%, 90% {-webkit-transform: translateY(-10px);} 
     20%, 40%, 60%, 80% {-webkit-transform: translateY(10px);} 
 } 
