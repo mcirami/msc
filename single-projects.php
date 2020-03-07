@@ -25,7 +25,19 @@ $projects = new WP_Query( $args );
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<header class="full_width">
-					<h2><span class="underline"><?php the_field('project_title'); ?></span></h2>
+					<h2>
+					<?php
+						$headingUnderline = get_field('project_title_underline');
+						$headingNoUnderline = get_field('project_title_no_underline');
+
+						if($headingUnderline) : ?>
+							<span class="underline"><?php echo $headingUnderline ;?></span>
+						<?php endif; ?>
+
+						<?php if($headingNoUnderline) :
+							echo " " . $headingNoUnderline;
+						endif; ?>
+					</h2>
 				</header>
 
 				<?php get_template_part( 'content', 'single-project' ); ?>

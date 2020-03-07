@@ -133,29 +133,26 @@ add_action( 'widgets_init', 'boiler_widgets_init' );
 function boiler_scripts_styles() {
 	// style.css just initializes the theme. This is compiled from /sass
 
-    wp_register_style('main-style', get_template_directory_uri() . '/css/main.min.css', array(), '1.0', 'all');
-    wp_enqueue_style( 'main-style');
+    wp_register_style('css3-animate-css', get_template_directory_uri() . '/css/vendor/animations.css', array(), '1.0', 'all');
+    wp_enqueue_style('css3-animate-css'); // Enqueue it!
 
-    wp_register_style('fancybox', get_template_directory_uri() . '/js/vendor/fancybox/jquery.fancybox.css', array(), '1.0', 'all');
-	wp_enqueue_style( 'fancybox');
+	wp_register_style('animate-ie-fix', get_template_directory_uri() . '/css/vendor/animations-ie-fix.css', array(), '1.0', 'all');
+	wp_enqueue_style('animate-ie-fix'); // Enqueue it!
 
-    wp_register_style('animate-it', get_template_directory_uri() . '/css/vendor/animate.min.css', array(), '1.0', 'all');
-    wp_enqueue_style('animate-it'); // Enqueue it!
-
-	wp_enqueue_script( 'jquery' , array(), '', true );
+	wp_register_style('main-style', get_template_directory_uri() . '/css/main.min.css', array(), '1.0', 'all');
+	wp_enqueue_style( 'main-style');
 
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js', '2.6.2', true );
 
-	//wp_enqueue_script( 'boiler-plugins', get_template_directory_uri() . '/js/plugins.js', array(), '20120206', true );
+	wp_register_script('css3-animate-js', get_template_directory_uri() . '/js/vendor/css3-animate-it.js', array(), '1.0'); // Modernizr
+	wp_enqueue_script('css3-animate-js'); // Enqueue it!
 
-	//wp_enqueue_script( 'boiler-main', get_template_directory_uri() . '/js/main.js', array(), '20120205', true );
+	//wp_enqueue_script( 'boiler-plugins', get_template_directory_uri() . '/js/plugins.js', array(), '20120206', true );
 	
 	// Return concatenated version of JS. If you add a new JS file add it to the concatenation queue in the gruntfile. 
 	// current files: js/vendor.mordernizr-2.6.2.min.js, js/plugins.js, js/main.js
 	
 	wp_enqueue_script( 'boiler-concat', get_template_directory_uri() . '/js/built.min.js', array(), '', true );
-	wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/js/vendor/fancybox/jquery.fancybox.pack.js', array('jquery'), '', true );
-
 }
 add_action( 'wp_enqueue_scripts', 'boiler_scripts_styles' );
 

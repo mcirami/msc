@@ -13,7 +13,9 @@
 					<div class="column_header">
 						<h3>Quick Links</h3>
 					</div>
-					<nav role="navigation">	<?php wp_nav_menu( array( 'theme_location' => 'footer', 'container' => false, 'menu_class' => 'footer_menu' ) ); // remember to assign a menu in the admin to remove the container div ?></nav>
+					<nav role="navigation">
+						<?php wp_nav_menu( array( 'theme_location' => 'footer', 'container' => false, 'menu_class' => 'footer_menu' ) ); // remember to assign a menu in the admin to remove the container div ?>
+					</nav>
 				</div>
 				<div class="column">
 					<div class="column_header">

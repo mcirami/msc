@@ -1,0 +1,131 @@
+
+.form_wrap {
+    position: absolute;
+    bottom: 0;
+    width: 85%;
+
+    @include media($tablet){
+        position: relative;
+        width: 100%;
+    }
+
+    .front_page_contact {
+        @include span-columns(12);
+        margin-bottom: 0;
+
+        .wpforms-field-container, form {
+            @include span-columns(12);
+        }
+
+        .form_input_name{
+            position: relative;
+            &:before {
+                content: '';
+                background: url('../images/icon-person.jpg') no-repeat;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 0;
+                top: 18px;
+            }
+        }
+
+        .form_input_email {
+            position: relative;
+            &:before {
+                content: '';
+                background: url('../images/icon-envelope-blue.jpg') no-repeat;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 0;
+                top: 18px;
+            }
+        }
+
+        .form_input_message {
+            position: relative;
+            &:before {
+                content: '';
+                background: url('../images/icon-message.jpg') no-repeat;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 0;
+                top: 19px;
+            }
+        }
+    }
+
+    .form_input_name, .form_input_email, .form_input_message {
+        @include span-columns(12);
+
+        input {
+            @include span-columns(12);
+            max-width: unset;
+            background-color: transparent;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid #fff;
+            padding: 10px 10px 10px 24px;
+            color: $white;
+            margin-bottom: 20px;
+        }
+    }
+
+    textarea {
+        color: $white;
+        background: transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #fff;
+        padding: 10px 10px 10px 24px;
+        margin-bottom: 20px;
+    }
+
+    .front_page_submit {
+        @include span-columns(12);
+        background-color: transparent;
+        color: $white;
+        padding: 15px 0;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: 1px solid $white;
+        text-align: center;
+
+        @include media($tablet){
+            padding: 12px 0;
+        }
+
+        @include media($mobile){
+            font-size: 14px;
+            padding: 10px 0;
+        }
+
+        @include media($smallMobile){
+            padding: 8px 0;
+            font-size: 13px;
+        }
+
+        &:hover {
+            color: $darkBlue;
+            background: $white;
+        }
+
+    }
+
+    .wpforms-confirmation-container-full {
+        margin-bottom: 0;
+
+        p {
+            color:$black;
+            font-size: 16px;
+        }
+    }
+
+}

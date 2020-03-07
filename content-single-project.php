@@ -53,7 +53,7 @@
 			<p>I am available for consulting, collaboration and contract work. Whether it's a small project or big project I'm confident I can get it done.</p>
 		</header>
 		<div class="form_wrap full_width">
-			<?php echo do_shortcode('[si-contact-form form="2"]'); ?>
+			<?php echo do_shortcode('[wpforms id="312" title="false" description="false"]'); ?>
 		</div>
 	</div>
 

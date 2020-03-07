@@ -29,30 +29,11 @@ $projects = new WP_Query( $args );
 				</div>
 			</div>
 		</div><!--  top section -->
-	
-	<!--	<div class="three_column_section">
-			<div class="container">
-				<div class="column">
-					<img src="<?php echo bloginfo('template_url'); ?>/images/responsive.png" />
-					<h3>Responsive</h3>
-					<p>Fully responsive websites that look great and function properly on any device and any screen size.</p>
-				</div>
-				<div class="column">
-					<img src="<?php echo bloginfo('template_url'); ?>/images/icons.png" />
-					<h3>Wordpress</h3>
-					<p>Custom built themes easy for anyone to add their own content and update at any time.</p>
-				</div>
-				<div class="column">
-					<img src="<?php echo bloginfo('template_url'); ?>/images/templates.png" />
-					<h3>Development</h3>
-					<p>Built and designed exactly how you imagined it. Unique for you to stick out above the rest.</p>
-				</div>
-			</div>
-		</div> three column section -->
 		<div class="full_width column_section">
 			<div class="container">
 				<h2><span class="underline">My</span> Portfolio</h2>
-				<h3>Click on Project To Find Out More More</h3>
+				<h3>All projects are fully responsive and function across all devices.</h3>
+				<p>Click on the project to see more.</p>
 				<section class="projects">
 					<div class="projects_section">
 
@@ -104,7 +85,7 @@ $projects = new WP_Query( $args );
 							<img src="<?php echo bloginfo('template_url'); ?>/images/icon-computer.png" />
 							<h3>Website and Visual Design</h3>
 						</div>
-						<div class="column_content animated slideInLeft">
+						<div class="column_content">
 							<p>Fully responsive websites designed to look great and function properly on all devices and any screen size.</p>
                             <p>The importance of having a clean, easy to use interface that is effective in meeting the users needs and at the same time displaying their vision in a stand out way.</p>
                             <h4>Simple, distinctive and effective.</h4>
@@ -149,7 +130,8 @@ $projects = new WP_Query( $args );
 							<img src="<?php echo bloginfo('template_url'); ?>/images/icon-html.png" />
 							<h3>Front & Back End Development</h3>
 						</div>
-						<div class="column_content animated slideInRight">
+
+						<div class="column_content">
                             <p>Web development is always evolving quickly. Keeping up with the latest technologies is and will always be a part of the job.</p>
                             <p>Getting to know the newest methods and at the same time getting better at the ones that are already relevant is something a developer must learn how to balance. However while new technologies come and go, the essentials of web development will basically remain the same.</p>
                             <p>I will mold your design into a functional website using the newest versions of HTML, CSS, Javascript, PHP and more. Depending on your needs, wants and desires there's no obstacle that can't be overcome when it comes to developing.</p>
@@ -212,53 +194,11 @@ $projects = new WP_Query( $args );
 					<h2>Let's Work</h2>
 					<p>I am available for consulting, collaboration and contract work. Whether it's a small project or big project I'm confident I can get it done.</p>
 					<div class="form_wrap full_width">
-						<?php echo do_shortcode('[si-contact-form form="2"]'); ?>
+						<?php echo do_shortcode('[wpforms id="312" title="false" description="false"]'); ?>
 					</div>
-					<!--
-					<div class="button_wrap">
-						<a class="button" href="/contact">Let's Work Together</a>
-					</div>
-				</div><!-- .container -->
+				</div>
 			</div>
 		</div>
-		
-		
-<!--	<div class="bottom_bar">
-			<div class="bar_wrap">
-				<div class="container">
-					<div class="content_wrap">
-						<h2 class="animate_top">Get In Touch...</h2>
-						<h2 class="animate_left">Let's Get Started Today!</h2>
-						<!--<img class="divider middle_fade_divide"src="<?php echo bloginfo('template_url'); ?>/images/divider1.png" />-->
-<!--	\				  	<div class="button_wrap">
-						  	<a class="button animate_bottom" href="/contact">Get In Touch</a>
-					  	</div>
-					</div>
-				</div>
-			</div>
-		</div><!-- bottom bar -->
-<!--	<div class="projects_section">
-			<div class="container">
-				<h2>Recent Projects</h2>
-				<div class="swiper-container">
-	        		<div class="swiper-wrapper">
-		        		<div class="swiper-slide">
-							<img src="<?php echo bloginfo('template_url'); ?>/images/slide1.png" />
-						</div>
-			        	<div class="swiper-slide">
-							<img src="<?php echo bloginfo('template_url'); ?>/images/slide2.png" />
-						</div>
-						<div class="swiper-slide">
-							<img src="<?php echo bloginfo('template_url'); ?>/images/slide3.png" />
-			        	</div>
-					</div>
-			        <div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>					
-				</div>
-				<div class="swiper-pagination"></div>
-				<a class="button" href="/projects">View All Projects</a>
-			</div>
-		</div><!--  projects section -->
 	</section><!-- home -->
 
 <?php get_footer(); ?>

@@ -9,15 +9,9 @@
 		color: $white;
 	}
 	
-	.form_wrap {
+	.form_wrap_contact {
 		color: $black;
 		font-size: 18px;
-	}
-	
-	#FSContact1 {
-		max-width: none !important;
-		width: 100%;
-		float: left;
 	}
 	
 	form {
@@ -39,9 +33,6 @@
 			border: none;
 			background: #ebf0f3;
 			width: 100%;
-			
-			
-			
 		}
 		
 		textarea {
@@ -57,22 +48,22 @@
 			width: auto;
 		}
 		
-		#fscf_submit_div1 {
+		.wpforms-submit-container {
 			text-align: center !important;
 			width: 100%;
-			
-			input[type="submit"] {
+
+			.contact_form_submit {
 				display: block;
 				width: 100%;
-				color: $red;
+				color: $red !important;
 				padding: 10px 12px;
 				border-radius: 3px;
 				-webkit-border-radius: 3px;
 				-moz-border-radius: 3px;
 				font-size: 16px;
 				text-transform: uppercase;
-				border: 1px solid $red;
-				background: transparent;
+				border: 1px solid $red !important;
+				background-color: transparent !important;
 				font-size: 16px;
 				-webkit-transition: all .5s ease 0s;
 				-moz-transition: all .5s ease 0s;
@@ -93,92 +84,11 @@
 					font-size: 13px;
 				}
 
-				
-				
-				
 				&:hover {
-					background: $red;
-					color: $white;
+					background: $red !important;
+					color: $white !important;
 				}
 			}
 		}
 	}
-	
-	#fscf_div_field1_0 {
-		clear: none !important;
-		float: left;
-		width: 45% !important;
-		margin-right: 10% !important;
-		margin-bottom: 20px;
-		
-		@include media($mobile){
-			width: 100% !important;
-			margin-right: 0 !important;
-		}
-	}
-	
-	#fscf_div_clear1_4 {
-		clear: none !important;
-		width: 45%;
-		float: left;
-		margin-right: 10%;
-		margin-bottom: 20px;
-		
-		@include media($mobile){
-			width: 100% !important;
-			margin-right: 0 !important;
-		}
-	/*	
-		&:after {
-			content: '';
-			background:url('../images/down-arrow.jpg') no-repeat;
-			width: 20px;
-			height: 20px;
-			right: 0;
-			position: absolute;
-		}
-	*/
-	}
-	
-	#fscf_div_clear1_1 {
-		clear: none !important;
-		width: 45%;
-		float: left;
-		margin-bottom: 20px;
-		
-		@include media($mobile){
-			width: 100% !important;
-			margin-right: 0 !important;
-		}
-	}
-	
-	#fscf_div_clear1_5 {
-		clear: none !important;
-		width: 45%;
-		float: left;
-		margin-bottom: 20px;
-		
-		@include media($mobile){
-			width: 100% !important;
-			margin-right: 0 !important;
-		}
-		/*
-		&:after {
-			content: '';
-			background:url('../images/down-arrow.jpg') no-repeat;
-			width: 20px;
-			height: 20px;
-			right: 0;
-			position: absolute;
-		}
-		
-		*/
-	}
-	
-	#fscf_div_field1_6 {
-		max-width: none !important;
-		
-		
-	}
-	
 }

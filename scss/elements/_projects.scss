@@ -144,6 +144,8 @@
 		}
 
 		.form_wrap {
+			display:inline-block;
+			position: relative;
 			width: 65%;
 			float:none;
 			margin: 0 auto;
@@ -158,104 +160,7 @@
 				position: relative;
 				width: 100%;
 			}
-
-			#FSContact2 {
-				@include span-columns(12);
-
-				#fscf_div_field2_0 {
-
-					&:before {
-						content: '';
-						background: url('../images/icon-person.jpg') no-repeat;
-						width: 20px;
-						height: 20px;
-						position: absolute;
-						left: 0;
-						top: 16px;
-					}
-				}
-
-				#fscf_div_field2_1 {
-					&:before {
-						content: '';
-						background: url('../images/icon-envelope-blue.jpg') no-repeat;
-						width: 20px;
-						height: 20px;
-						position: absolute;
-						left: 0;
-						top: 16px;
-					}
-				}
-
-				#fscf_div_field2_3 {
-					&:before {
-						content: '';
-						background: url('../images/icon-message.jpg') no-repeat;
-						width: 20px;
-						height: 20px;
-						position: absolute;
-						left: 0;
-						top: 16px;
-					}
-				}
-			}
-
-			input {
-				background: transparent;
-				border-top: none;
-				border-left: none;
-				border-right: none;
-				border-bottom: 1px solid #fff;
-				padding: 10px 10px 10px 24px;
-				margin-bottom: 40px;
-			}
-
-			textarea {
-				background: transparent;
-				border-top: none;
-				border-left: none;
-				border-right: none;
-				border-bottom: 1px solid #fff;
-				padding: 10px 10px 10px 24px;
-				margin-bottom: 20px;
-			}
-
-			input[type="submit"] {
-				width: 100%;
-				display: block;
-				color: $white;
-				padding: 15px 0;
-				border-radius: 3px;
-				-webkit-border-radius: 3px;
-				-moz-border-radius: 3px;
-				font-size: 16px;
-				text-transform: uppercase;
-				border: 1px solid $white;
-				text-align: center;
-
-				@include media($tablet){
-					padding: 12px 0;
-				}
-
-				@include media($mobile){
-					font-size: 14px;
-					padding: 10px 0;
-				}
-
-				@include media($smallMobile){
-					padding: 8px 0;
-					font-size: 13px;
-				}
-
-				&:hover {
-					color: $darkBlue;
-					background: $white;
-				}
-
-			}
-
 		}
-
 	}
 
 	.nav-previous a, .nav-next a {
