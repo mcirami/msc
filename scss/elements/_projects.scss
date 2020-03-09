@@ -34,6 +34,10 @@
 		margin-top: 60px;
 		padding: 30px 20%;
 
+		@include media($mobile) {
+			padding: 30px 5%;
+		}
+
 		h4 {
 			margin:0;
 		}
@@ -83,6 +87,10 @@
 			-webkit-border-radius: 6px;
 			-moz-border-radius: 6px;
 
+			@include media($mobile) {
+				padding: 20px 30px;
+			}
+
 			header {
 				text-align: center;
 				padding:0 10% 20px;
@@ -91,12 +99,25 @@
 				border-bottom: 1px solid;
 				border-color: rgba(155,155,155,.2);
 
+				@include media($mobile) {
+					padding: 0 0 20px;
+				}
+
 				h3 {
+					font-family: Titillium SemiboldItalic, sans-serif;
 					margin: 0 0 10px;
+
+					@include media($mobile) {
+						font-size: 18px;
+					}
 				}
 
 				p {
 					margin: 0;
+
+					@include media($mobile) {
+						font-size:14px;
+					}
 				}
 			}
 
@@ -117,6 +138,10 @@
 			margin-bottom: 40px;
 			p {
 				padding: 0 20%;
+
+				@include media($mobile) {
+					padding: 0 5%;
+				}
 			}
 		}
 
@@ -149,12 +174,11 @@
 			width: 65%;
 			float:none;
 			margin: 0 auto;
-			border: 1px solid;
+			border: 1px solid $white;
 			padding: 40px;
 			border-radius: 6px;
 			-webkit-border-radius: 6px;
 			-moz-border-radius: 6px;
-			border-color: rgba(255,255,255,.4);
 
 			@include media($tablet){
 				position: relative;
@@ -167,6 +191,10 @@
 		color: #143e57;
 		padding: 10px 0;
 		font-size: 16px;
+
+		@include media($mobile) {
+			font-size: 14px;
+		}
 
 		&:hover {
 			color: $red;
