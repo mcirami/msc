@@ -6,7 +6,11 @@
 	top: 0;
 	padding: 10px 0;
 	border-bottom: 1px solid;
-	border-color: rgba(155,155,155,.4);
+	border-color: rgba(155,155,155,.1);
+
+	&.add_bg {
+		background: $lightGrayBlue;
+	}
 
 	.mobile_menu_icon {
 		display: none;
@@ -81,9 +85,6 @@
 		
 		@include media($mobile){
 			display: block;
-			//width: 40px;
-			//float: left;
-			//padding-top: 4px;
 		}
 		 
 	}
@@ -96,6 +97,7 @@
 		-moz-transition: all .35s ease 0s;
 		-ms-transition: all .35s ease 0s;
 		-o-transition: all .35s ease 0s;
+		margin-top: 15px;
 		
 		&.scroll {
 			padding-top: 5px;

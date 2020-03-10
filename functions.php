@@ -142,7 +142,7 @@ function boiler_scripts_styles() {
 	wp_register_style('main-style', get_template_directory_uri() . '/css/main.min.css', array(), '1.0', 'all');
 	wp_enqueue_style( 'main-style');
 
-	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js', '2.6.2', true );
+	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js', array(), '2.6.2');
 
 	wp_register_script('css3-animate-js', get_template_directory_uri() . '/js/vendor/css3-animate-it.js', array(), '1.0'); // Modernizr
 	wp_enqueue_script('css3-animate-js'); // Enqueue it!
@@ -155,6 +155,15 @@ function boiler_scripts_styles() {
 	wp_enqueue_script( 'boiler-concat', get_template_directory_uri() . '/js/built.min.js', array(), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'boiler_scripts_styles' );
+
+function defer_parsing_of_js( $url ) {
+	if ( is_user_logged_in() ) return $url; //don't break WP Admin
+	if ( FALSE === strpos( $url, '.js' ) ) return $url;
+	if ( strpos( $url, 'jquery.js' ) ) return $url;
+	return str_replace( ' src', ' defer src', $url );
+}
+add_filter( 'script_loader_tag', 'defer_parsing_of_js', 10 );
+
 
 /**
  * Custom template tags for this theme.

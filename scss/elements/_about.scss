@@ -1,44 +1,6 @@
 .about {
 	@include span-columns(12);
-	//padding: 100px;
-	/*
-	.top_section {
-		@include span-columns(12);
-		background: url('../images/about-main.jpg') no-repeat;
-		background-size: cover;
-		text-align: center;
-		color: $white;
-		
-		.header_wrap {
-			@include span-columns(12);
-			padding: 12% 0 9%;
-			background: rgba(0,0,0,.5);
-			
-			@include media($tablet){
-				padding: 15% 0 7%;
-			}
-			
-			@include media($mobile){
-				padding: 24% 0 10%;
-			}
-		}
-		
-		h2 {
-			font-size: 56px;
-			line-height: 1;
-			text-shadow: 3px 3px 3px rgba(85,94,94,0.9);
-			text-transform: uppercase;
-			
-			@include media($tablet){
-				font-size: 5.5vw;
-			}
-			
-			@include media($smallMobile){
-				font-size: 36px;
-			}
-		}
-	}
-	*/
+
 	.top_section {
 		@include span-columns(12);
 		text-align: left;
@@ -54,6 +16,17 @@
 		h2 {
 			@include span-columns(12);
 			text-align: center;
+		}
+
+		a {
+			color: $red;
+			font-size: 16px;
+			font-family: 'Lato Bold', sans-serif;
+			margin-left: 5px;
+
+			&:hover {
+				color: $black;
+			}
 		}
 	}
 	

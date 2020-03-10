@@ -35,7 +35,7 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-	<header id="global_header">
+	<header id="global_header" class="<?php if(!is_front_page()) { echo "add_bg"; } ?>">
 		<div class="container">
 			<a class="mobile_menu_icon" href="#"><!--<img id="menu" class="mobile_menu_icon" src="<?php echo bloginfo('template_url'); ?>/images/mobile_menu_icon.png" alt=""/>-->
 				<span></span>

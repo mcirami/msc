@@ -1,13 +1,16 @@
 
 
 	<div class="description full_width">
-		<h3><?php the_field('project_top_heading'); ?></h3>
-		<p><?php the_field('project_top_description'); ?></p>
+		<div class="container">
+			<h3><?php the_field('project_top_heading'); ?></h3>
+			<p><?php the_field('project_top_description'); ?></p>
+		</div>
 	</div>
 
 	<section class="full_width project_images">
 
 		<div class="container">
+			<div class="page_divider"></div>
 			<?php if( have_rows('screenshots') ): ?>
 
 				<?php

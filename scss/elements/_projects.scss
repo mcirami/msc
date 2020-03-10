@@ -20,12 +20,20 @@
 		}
 
 		p {
-			margin-bottom: 40px;
-
 			@include media($mobile) {
 				font-size: 14px;
 			}
 		}
+	}
+
+	.page_divider {
+		@include span-columns(12);
+		height:4px;
+		background: $darkBlue;
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		margin: 20px 0 40px;
 	}
 
 	.bottom_desc {
@@ -44,6 +52,7 @@
 
 		a {
 			color: $white;
+			font-family: 'Lato Bold', sans-serif;
 
 			&:hover {
 				color: $lightGrayBlue;
