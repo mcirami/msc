@@ -133,19 +133,16 @@ add_action( 'widgets_init', 'boiler_widgets_init' );
 function boiler_scripts_styles() {
 	// style.css just initializes the theme. This is compiled from /sass
 
-    wp_register_style('css3-animate-css', get_template_directory_uri() . '/css/vendor/animations.css', array(), '1.0', 'all');
-    wp_enqueue_style('css3-animate-css'); // Enqueue it!
+    /*wp_register_style('animate-css', get_template_directory_uri() . '/css/vendor/animate.min.css', array(), '1.0', 'all');
+    wp_enqueue_style('animate-css');*/
 
-	wp_register_style('animate-ie-fix', get_template_directory_uri() . '/css/vendor/animations-ie-fix.css', array(), '1.0', 'all');
-	wp_enqueue_style('animate-ie-fix'); // Enqueue it!
-
-	wp_register_style('main-style', get_template_directory_uri() . '/css/main.min.css', array(), '1.0', 'all');
+    wp_register_style('main-style', get_template_directory_uri() . '/css/main.min.css', array(), '1.0', 'all');
 	wp_enqueue_style( 'main-style');
 
-	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js', array(), '2.6.2');
+	//wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js', array(), '2.6.2');
 
-	wp_register_script('css3-animate-js', get_template_directory_uri() . '/js/vendor/css3-animate-it.js', array(), '1.0'); // Modernizr
-	wp_enqueue_script('css3-animate-js'); // Enqueue it!
+    /*wp_register_script('wow-js', get_template_directory_uri() . '/js/vendor/WOW.js', array(), '1.0');
+    wp_enqueue_script('wow-js');*/
 
 	//wp_enqueue_script( 'boiler-plugins', get_template_directory_uri() . '/js/plugins.js', array(), '20120206', true );
 	
@@ -155,15 +152,6 @@ function boiler_scripts_styles() {
 	wp_enqueue_script( 'boiler-concat', get_template_directory_uri() . '/js/built.min.js', array(), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'boiler_scripts_styles' );
-
-function defer_parsing_of_js( $url ) {
-	if ( is_user_logged_in() ) return $url; //don't break WP Admin
-	if ( FALSE === strpos( $url, '.js' ) ) return $url;
-	if ( strpos( $url, 'jquery.js' ) ) return $url;
-	return str_replace( ' src', ' defer src', $url );
-}
-add_filter( 'script_loader_tag', 'defer_parsing_of_js', 10 );
-
 
 /**
  * Custom template tags for this theme.

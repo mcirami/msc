@@ -23,6 +23,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700|Lato:400,300,700|Fira+Sans:400,700italic,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <meta property="og:image" content="<?php echo bloginfo('template_url'); ?>/images/logo.png" />
     <meta property="og:description" content="Custom built and designed websites. Unique for you to stick out above the rest" />

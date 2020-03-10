@@ -1,5 +1,7 @@
 jQuery(document).ready(function($){
 
+	AOS.init();
+
 	var windowWidth = $(window).width();
 	
 	$.fn.exists = function() {

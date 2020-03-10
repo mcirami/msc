@@ -30,8 +30,12 @@ $projects = new WP_Query( $args );
 			</div>
 		</div><!--  top section -->
 		<div class="full_width column_section">
-			<div class="container animatedParent animateOnce">
-				<h2 class="animated bounceInDown"><span class="underline">My</span> Portfolio</h2>
+			<div class="container">
+				<h2 data-aos="fade-down"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
+                    <span class="underline">My</span> Portfolio</h2>
 				<h3>All projects are fully responsive and function across all devices.</h3>
 				<p>Click on the project to see more.</p>
 				<section id="projects" class="projects">
@@ -50,8 +54,8 @@ $projects = new WP_Query( $args );
 								$thumb = $image['sizes'][ $size ];
 								?>
 
-								<div class="column_project animatedParent animateOnce" >
-									<div class="content animated rollIn slow">
+								<div class="column_project">
+									<div class="content wow rollIn">
 										<?php
 											$link = get_permalink();
 										?>
@@ -77,15 +81,15 @@ $projects = new WP_Query( $args );
 			</div><!-- .container -->
 		</div>
 		<div class="skills_section">
-			<div class="container animatedParent animateOnce">
-				<h2 class="animated bounceInDown"><span class="underline">Skills</span> <span class="red">&</span> Speciality</h2>
+			<div class="container">
+				<h2 class="wow fadeInDown"><span class="underline">Skills</span> <span class="red">&</span> Speciality</h2>
 				<div class="two_column_section full_width">
-					<div class="column animatedParent animateOnce">
-						<div class="title full_width animated bounceInDown slower">
+					<div class="column">
+						<div class="title full_width wow fadeInDown">
 							<img src="<?php echo bloginfo('template_url'); ?>/images/icon-computer.png" />
 							<h3>Website and Visual Design</h3>
 						</div>
-						<div class="column_content animated fadeInLeft slow">
+						<div class="column_content wow fadeInLeft">
 							<p>Fully responsive websites designed to look great and function properly on all devices and any screen size.</p>
                             <p>The importance of having a clean, easy to use interface that is effective in meeting the users needs and at the same time displaying their vision in a stand out way.</p>
                             <h4>Simple, distinctive and effective.</h4>
@@ -125,13 +129,13 @@ $projects = new WP_Query( $args );
 							<a href="/contact">Share your requirements</a>
 						</div>
 					</div><!-- column -->
-					<div class="column animatedParent animateOnce">
-						<div class="title full_width animated bounceInDown slower">
+					<div class="column">
+						<div class="title full_width wow fadeInDown">
 							<img src="<?php echo bloginfo('template_url'); ?>/images/icon-html.png" />
 							<h3>Front & Back End Development</h3>
 						</div>
 
-						<div class="column_content animated fadeInRight slow">
+						<div class="column_content wow fadeInRight">
                             <p>Web development is always evolving quickly. Keeping up with the latest technologies is and will always be a part of the job.</p>
                             <p>Getting to know the newest methods and at the same time getting better at the ones that are already relevant is something a developer must learn how to balance. However while new technologies come and go, the essentials of web development will basically remain the same.</p>
                             <p>I will mold your design into a functional website using the newest versions of HTML, CSS, Javascript, PHP and more. Depending on your needs, wants and desires there's no obstacle that can't be overcome when it comes to developing.</p>
@@ -175,8 +179,8 @@ $projects = new WP_Query( $args );
 				
 			</div>
 		</div><!-- skills section -->
-		<div class="about_section full_width animatedParent animateOnce">
-			<div class="column animated bounceInLeft slow">
+		<div class="about_section full_width">
+			<div class="column wow fadeInLeft">
 				<div class="container">
 					<h2>About Me</h2>
 					<h4>Hello, thanks for checking out my site. My name is Matteo and I am a 
@@ -189,7 +193,7 @@ $projects = new WP_Query( $args );
 					</div>
 				</div><!-- .container -->
 			</div>
-			<div class="column animated bounceInRight slow">
+			<div class="column wow fadeInRight">
 				<div class="container">
 					<h2>Let's Work</h2>
 					<p>I am available for consulting, collaboration and contract work. Whether it's a small project or big project I'm confident I can get it done.</p>
