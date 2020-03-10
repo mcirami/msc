@@ -2,8 +2,8 @@
 
 	<div class="description full_width">
 		<div class="container">
-			<h3><?php the_field('project_top_heading'); ?></h3>
-			<p><?php the_field('project_top_description'); ?></p>
+			<h3 data-aos="fade-down"><?php the_field('project_top_heading'); ?></h3>
+			<p data-aos="fade-down"><?php the_field('project_top_description'); ?></p>
 		</div>
 	</div>
 

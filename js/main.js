@@ -1,6 +1,11 @@
 jQuery(document).ready(function($){
 
-	AOS.init();
+	AOS.init({
+		easing: "ease-in-out",
+		mirror: false,
+		once: true,
+		duration: 1000,
+	});
 
 	var windowWidth = $(window).width();
 	

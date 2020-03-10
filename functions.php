@@ -133,16 +133,10 @@ add_action( 'widgets_init', 'boiler_widgets_init' );
 function boiler_scripts_styles() {
 	// style.css just initializes the theme. This is compiled from /sass
 
-    /*wp_register_style('animate-css', get_template_directory_uri() . '/css/vendor/animate.min.css', array(), '1.0', 'all');
-    wp_enqueue_style('animate-css');*/
-
     wp_register_style('main-style', get_template_directory_uri() . '/css/main.min.css', array(), '1.0', 'all');
 	wp_enqueue_style( 'main-style');
 
 	//wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js', array(), '2.6.2');
-
-    /*wp_register_script('wow-js', get_template_directory_uri() . '/js/vendor/WOW.js', array(), '1.0');
-    wp_enqueue_script('wow-js');*/
 
 	//wp_enqueue_script( 'boiler-plugins', get_template_directory_uri() . '/js/plugins.js', array(), '20120206', true );
 	
