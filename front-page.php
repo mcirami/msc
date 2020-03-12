@@ -77,6 +77,27 @@ $projects = new WP_Query( $args );
 				</section>
 			</div><!-- .container -->
 		</div>
+		<div class="services_section full_width">
+			<div class="container">
+				<h2 data-aos="fade-down"><span class="underline">Services</span> Offered</h2>
+				<div class="columns full_width">
+					<ul>
+						<li data-aos="fade-right"><p>Website Design & Development</p></li>
+						<li data-aos="fade-right"><p>Custom Wordpress Theme</p></li>
+						<li data-aos="fade-right"><p>Hosting</p></li>
+						<li data-aos="fade-right"><p>Setup Email Services</p></li>
+						<li data-aos="fade-right"><p>Social Media Setup/Integration</p></li>
+					</ul>
+					<ul>
+						<li data-aos="fade-left"><p>Website Maintenance</p></li>
+						<li data-aos="fade-left"><p>Newsletter Integration</p></li>
+						<li data-aos="fade-left"><p>Training/Consulting</p></li>
+						<li data-aos="fade-left"><p>Logo Design</p></li>
+						<li data-aos="fade-left"><p>Business Card Design</p></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<div class="skills_section">
 			<div class="container">
 				<h2 data-aos="fade-down">

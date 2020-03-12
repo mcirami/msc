@@ -25,7 +25,7 @@ $projects = new WP_Query( $args );
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<header class="full_width">
-					<h2>
+					<h2 data-aos="fade-down">
 					<?php
 						$headingUnderline = get_field('project_title_underline');
 						$headingNoUnderline = get_field('project_title_no_underline');

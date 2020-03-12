@@ -27,7 +27,7 @@ get_header(); ?>
 
 			</div>
 		</div>
-		<div class="middle_section full_width">
+		<div class="services_section full_width">
 			<div class="container">
 				<h2 data-aos="fade-down"><span class="underline">My</span> Expertise</h2>
 				<div class="columns full_width">

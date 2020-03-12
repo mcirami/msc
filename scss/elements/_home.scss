@@ -292,54 +292,13 @@
 		}
 
 	}
-	/*
-	.three_column_section {
-		@include span-columns(12);
-		background: $white;
-		
-		@include media($mobile){
-			padding: 35px;
-		}
-		
-		.column {
-			@include span-columns(4);
-			margin-bottom: 40px;
-			padding: 35px;
-			text-align: center;
-			
-			@include media($mobile) {
-				width: 100%;
-				margin-bottom: 20px;
-				padding: 0;
-			}
-			
-			img {
-				width: 60%;
-				
-				@include media($mobile){
-					width: 175px;
-				}
-			}
-			
-			&:first-child {
-				
-				img {
-					width: 89%;
-					
-					@include media($mobile){
-						width: 200px;
-					}
-				}
-			}
-			
-			p {
-				@include media($mobile){
-					font-size: 14px;
-				}
-			}
+
+	.services_section {
+		h2 {
+			color: $white;
 		}
 	}
-	*/
+
 	.skills_section {
 		@include span-columns(12);
 		background: $lightGrayBlue;
