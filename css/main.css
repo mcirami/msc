@@ -1411,7 +1411,7 @@ body {
 .full_width {
   float: left;
   display: block;
-  margin-right: 2.3576515979%;
+  margin-right: 2.35765%;
   width: 100%; }
   .full_width:last-child {
     margin-right: 0; }
@@ -1524,7 +1524,7 @@ h2 {
     .social_media_section .column .image_wrap {
       float: left;
       display: block;
-      margin-right: 2.3576515979%;
+      margin-right: 2.35765%;
       width: 100%;
       padding: 0 32% 10px; }
       .social_media_section .column .image_wrap:last-child {
@@ -1590,7 +1590,7 @@ h2 {
   .services_section h2 {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
+    margin-right: 2.35765%;
     width: 100%;
     color: #fff; }
     .services_section h2:last-child {
@@ -1820,7 +1820,7 @@ p, a {
 #global_header {
   float: left;
   display: block;
-  margin-right: 2.3576515979%;
+  margin-right: 2.35765%;
   width: 100%;
   z-index: 999;
   background: #fff;
@@ -1920,7 +1920,7 @@ p, a {
   #global_header nav {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
+    margin-right: 2.35765%;
     width: 100%;
     width: auto;
     float: right; }
@@ -1930,14 +1930,14 @@ p, a {
       #global_header nav {
         float: left;
         display: block;
-        margin-right: 7.4229703521%;
+        margin-right: 7.42297%;
         width: 100%; }
         #global_header nav:last-child {
           margin-right: 0; } }
   #global_header ul {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
+    margin-right: 2.35765%;
     width: 100%; }
     #global_header ul:last-child {
       margin-right: 0; }
@@ -2097,14 +2097,14 @@ p, a {
   #global_footer .column ul {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
+    margin-right: 2.35765%;
     width: 100%; }
     #global_footer .column ul:last-child {
       margin-right: 0; }
     #global_footer .column ul li {
       float: left;
       display: block;
-      margin-right: 2.3576515979%;
+      margin-right: 2.35765%;
       width: 100%;
       padding-left: 20px;
       font-family: 'Lato Regular'; }
@@ -2145,14 +2145,14 @@ p, a {
   #global_footer .column .contact_info {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
+    margin-right: 2.35765%;
     width: 100%; }
     #global_footer .column .contact_info:last-child {
       margin-right: 0; }
     #global_footer .column .contact_info a {
       float: left;
       display: block;
-      margin-right: 2.3576515979%;
+      margin-right: 2.35765%;
       width: 100%;
       color: #fff;
       padding-left: 45px;
@@ -2231,7 +2231,7 @@ p, a {
   .form_wrap .front_page_contact {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
+    margin-right: 2.35765%;
     width: 100%;
     margin-bottom: 0; }
     .form_wrap .front_page_contact:last-child {
@@ -2239,21 +2239,21 @@ p, a {
     .form_wrap .front_page_contact .wpforms-field-container, .form_wrap .front_page_contact form {
       float: left;
       display: block;
-      margin-right: 2.3576515979%;
+      margin-right: 2.35765%;
       width: 100%; }
       .form_wrap .front_page_contact .wpforms-field-container:last-child, .form_wrap .front_page_contact form:last-child {
         margin-right: 0; }
     .form_wrap .front_page_contact .form_input_name, .form_wrap .front_page_contact .form_input_email, .form_wrap .front_page_contact .form_input_message {
       float: left;
       display: block;
-      margin-right: 2.3576515979%;
+      margin-right: 2.35765%;
       width: 100%; }
       .form_wrap .front_page_contact .form_input_name:last-child, .form_wrap .front_page_contact .form_input_email:last-child, .form_wrap .front_page_contact .form_input_message:last-child {
         margin-right: 0; }
       .form_wrap .front_page_contact .form_input_name input, .form_wrap .front_page_contact .form_input_email input, .form_wrap .front_page_contact .form_input_message input {
         float: left;
         display: block;
-        margin-right: 2.3576515979%;
+        margin-right: 2.35765%;
         width: 100%;
         max-width: unset !important;
         background-color: transparent !important;
@@ -2308,7 +2308,7 @@ p, a {
     .form_wrap .front_page_contact .front_page_submit {
       float: left;
       display: block;
-      margin-right: 2.3576515979%;
+      margin-right: 2.35765%;
       width: 100%;
       background-color: transparent !important;
       color: #fff !important;
@@ -2348,14 +2348,14 @@ p, a {
 .home {
   float: left;
   display: block;
-  margin-right: 2.3576515979%;
+  margin-right: 2.35765%;
   width: 100%; }
   .home:last-child {
     margin-right: 0; }
   .home h2 {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
+    margin-right: 2.35765%;
     width: 100%;
     text-align: center;
     color: #143e57; }
@@ -2364,10 +2364,16 @@ p, a {
     .home h2 span.red {
       border-bottom: none;
       color: #ed2124; }
+  .home summary.heading {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; }
+  .home summary.paragraph {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400; }
   .home .button_wrap {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
+    margin-right: 2.35765%;
     width: 100%;
     margin-top: 10px; }
     .home .button_wrap:last-child {
@@ -2375,7 +2381,7 @@ p, a {
   .home .top_section {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
+    margin-right: 2.35765%;
     width: 100%;
     background: url("../images/home-hero.jpg") no-repeat;
     background-size: cover;
@@ -2423,7 +2429,7 @@ p, a {
     .home .top_section p {
       float: left;
       display: block;
-      margin-right: 2.3576515979%;
+      margin-right: 2.35765%;
       width: 100%;
       font-family: 'Lato Light';
       font-size: 22px;
@@ -2468,7 +2474,7 @@ p, a {
     .home .column_section .projects {
       float: left;
       display: block;
-      margin-right: 2.3576515979%;
+      margin-right: 2.35765%;
       width: 100%;
       background-color: #929292; }
       .home .column_section .projects:last-child {
@@ -2476,7 +2482,7 @@ p, a {
       .home .column_section .projects .projects_section {
         float: left;
         display: block;
-        margin-right: 2.3576515979%;
+        margin-right: 2.35765%;
         width: 100%;
         padding-bottom: 40px;
         background: #fff; }
@@ -2485,7 +2491,7 @@ p, a {
         .home .column_section .projects .projects_section .projects_wrap {
           float: left;
           display: block;
-          margin-right: 2.3576515979%;
+          margin-right: 2.35765%;
           width: 100%; }
           .home .column_section .projects .projects_section .projects_wrap:last-child {
             margin-right: 0; }
@@ -2518,7 +2524,7 @@ p, a {
           .home .column_section .projects .projects_section .column_project .content {
             float: left;
             display: block;
-            margin-right: 2.3576515979%;
+            margin-right: 2.35765%;
             width: 100%;
             transition: all 0.5s; }
             .home .column_section .projects .projects_section .column_project .content:last-child {
@@ -2588,7 +2594,7 @@ p, a {
   .home .skills_section {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
+    margin-right: 2.35765%;
     width: 100%;
     background: #f8f8f8;
     padding: 40px 0 80px;
@@ -2602,34 +2608,24 @@ p, a {
     .home .skills_section .two_column_section {
       float: left;
       display: block;
-      margin-right: 2.3576515979%;
+      margin-right: 2.35765%;
       width: 100%;
-      margin-top: 40px;
-      			/*display: -webkit-box;
-      			display: -ms-flexbox;
-      			display: flex;
-      			-webkit-box-orient: horizontal;
-      			-webkit-box-direction: normal;
-      			-ms-flex-direction: row;
-      			flex-direction: row;
-      			-ms-flex-wrap: nowrap;
-      			flex-wrap: nowrap;
-      */ }
+      margin-top: 40px; }
       .home .skills_section .two_column_section:last-child {
         margin-right: 0; }
       @media screen and (max-width: 768px) {
         .home .skills_section .two_column_section {
           float: left;
           display: block;
-          margin-right: 7.4229703521%;
+          margin-right: 7.42297%;
           width: 100%; }
           .home .skills_section .two_column_section:last-child {
             margin-right: 0; } }
     .home .skills_section .column {
       float: left;
       display: block;
-      margin-right: 2.3576515979%;
-      width: 48.821174201%;
+      margin-right: 2.35765%;
+      width: 48.82117%;
       text-align: left;
       /*display: -webkit-box;
       display: -ms-flexbox;
@@ -2649,14 +2645,14 @@ p, a {
         .home .skills_section .column {
           float: left;
           display: block;
-          margin-right: 7.4229703521%;
+          margin-right: 7.42297%;
           width: 100%; }
           .home .skills_section .column:last-child {
             margin-right: 0; } }
       .home .skills_section .column .column_content {
         float: left;
         display: block;
-        margin-right: 2.3576515979%;
+        margin-right: 2.35765%;
         width: 100%;
         height: 100%;
         padding-bottom: 30px; }
@@ -2668,14 +2664,14 @@ p, a {
       .home .skills_section .column h4 {
         float: left;
         display: block;
-        margin-right: 2.3576515979%;
+        margin-right: 2.35765%;
         width: 100%; }
         .home .skills_section .column h4:last-child {
           margin-right: 0; }
       .home .skills_section .column ul {
         float: left;
         display: block;
-        margin-right: 2.3576515979%;
+        margin-right: 2.35765%;
         width: 100%;
         list-style-type: disc;
         padding-left: 20px; }
@@ -2684,7 +2680,7 @@ p, a {
         .home .skills_section .column ul li {
           float: left;
           display: block;
-          margin-right: 2.3576515979%;
+          margin-right: 2.35765%;
           width: 100%;
           display: list-item; }
           .home .skills_section .column ul li:last-child {
@@ -2692,7 +2688,7 @@ p, a {
         .home .skills_section .column ul h5 {
           float: left;
           display: block;
-          margin-right: 2.3576515979%;
+          margin-right: 2.35765%;
           width: 100%;
           font-family: 'Lato Bold Italic';
           margin: 0;
@@ -2750,7 +2746,7 @@ p, a {
       .home .about_section {
         float: left;
         display: block;
-        margin-right: 3.5786636068%;
+        margin-right: 3.57866%;
         width: 100%; }
         .home .about_section:last-child {
           margin-right: 0; } }
@@ -2772,7 +2768,7 @@ p, a {
         .home .about_section .column {
           float: left;
           display: block;
-          margin-right: 3.5786636068%;
+          margin-right: 3.57866%;
           width: 100%; }
           .home .about_section .column:last-child {
             margin-right: 0; } }
@@ -2843,7 +2839,7 @@ p, a {
   .single_project .page_divider {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
+    margin-right: 2.35765%;
     width: 100%;
     height: 4px;
     background: #143e57;
@@ -2871,7 +2867,7 @@ p, a {
   .single_project nav {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
+    margin-right: 2.35765%;
     width: 100%;
     padding: 20px 0; }
     .single_project nav:last-child {
@@ -2978,7 +2974,7 @@ p, a {
 .contact {
   float: left;
   display: block;
-  margin-right: 2.3576515979%;
+  margin-right: 2.35765%;
   width: 100%;
   text-align: center;
   padding-bottom: 40px; }
@@ -2987,7 +2983,7 @@ p, a {
   .contact .top_section {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
+    margin-right: 2.35765%;
     width: 100%;
     text-align: center;
     color: #fff; }
@@ -3059,14 +3055,14 @@ p, a {
 .about {
   float: left;
   display: block;
-  margin-right: 2.3576515979%;
+  margin-right: 2.35765%;
   width: 100%; }
   .about:last-child {
     margin-right: 0; }
   .about .top_section {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
+    margin-right: 2.35765%;
     width: 100%;
     text-align: left;
     background: #fff;
@@ -3080,7 +3076,7 @@ p, a {
     .about .top_section h2 {
       float: left;
       display: block;
-      margin-right: 2.3576515979%;
+      margin-right: 2.35765%;
       width: 100%;
       text-align: center; }
       .about .top_section h2:last-child {

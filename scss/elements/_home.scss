@@ -12,6 +12,14 @@
 		}
 	}
 
+	summary.heading {
+		@include latoBold;
+	}
+
+	summary.paragraph {
+		@include latoDark;
+	}
+
 	.button_wrap {
 		@include span-columns(12);
 		margin-top: 10px;
@@ -313,16 +321,7 @@
 		.two_column_section {
             @include span-columns(12);
 			margin-top: 40px;
-			/*display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-orient: horizontal;
-			-webkit-box-direction: normal;
-			-ms-flex-direction: row;
-			flex-direction: row;
-			-ms-flex-wrap: nowrap;
-			flex-wrap: nowrap;
-*/
+
 			@include media($mobile) {
 				@include span-columns(4);
 			}

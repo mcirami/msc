@@ -34,6 +34,7 @@
 					<ul>
 						<li>Backend/Front-End Development</li>
 						<li>CMS Integration - Wordpress, Core PHP</li>
+                        <li>PHP Framework - Laravel</li>
 						<li>Responsive to all devices</li>
 						<li>Website Maintenance</li>
 						<li>Website Hosting</li>
