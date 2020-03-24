@@ -1,9 +1,12 @@
+
 // frameworks
-@import "libs/bourbon/bourbon"; 
+//@import "bootstrap/bootstrap.scss";
+@import "libs/bourbon/bourbon";
 @import "partials/grid";  // custom grid params have to go here to override neat
 @import "libs/neat/neat"; 
 @import "libs/normalize"; 
 @import "libs/fa/font-awesome";
+//@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 // partials
 // @import "libs/animate"; // big lib add if needed

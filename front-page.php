@@ -212,6 +212,42 @@ $projects = new WP_Query( $args );
 				
 			</div>
 		</div><!-- skills section -->
+
+		<section class="row review_section">
+			<div class="col-12">
+				<div class="container">
+					<h2 data-aos="fade-down">
+						<span class="underline">What</span> My Clients Say...
+					</h2>
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner py-5">
+							<div class="carousel-item active text-center">
+								<img alt="review image" class="d-block mx-auto float-none" src="<?php echo bloginfo( 'template_url' ); ?>/images/review-al.jpg"/>
+							</div>
+							<div class="carousel-item">
+								<img alt="review image" class="d-block mx-auto float-none" src="<?php echo bloginfo( 'template_url' ); ?>/images/review-bark.jpg"/>
+							</div>
+							<div class="carousel-item">
+								<img alt="review image" class="d-block mx-auto float-none" src="<?php echo bloginfo( 'template_url' ); ?>/images/review-bark2.jpg"/>
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 		<div class="about_section full_width">
 			<div class="column" data-aos="fade-right">
 				<div class="container">

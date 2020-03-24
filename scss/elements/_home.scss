@@ -298,7 +298,6 @@
 		.popup {
 			display: none;
 		}
-
 	}
 
 	.services_section {
@@ -433,6 +432,26 @@
 				
 				&:hover {
 					color: #051c2b;
+				}
+			}
+		}
+	}
+
+	.review_section {
+		padding: 40px 0;
+
+		.carousel-indicators li {
+			background-color: $red;
+		}
+
+		.carousel-item {
+			min-height: 250px;
+
+			img {
+				width: auto;
+
+				@include media($mobile) {
+					width: 100%;
 				}
 			}
 		}

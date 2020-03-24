@@ -1420,6 +1420,8 @@ a {
   text-decoration: none;
   /*@include transition(color 1s ease-in);*/
   cursor: pointer; }
+  a:hover {
+    text-decoration: none; }
 
 ul {
   list-style: none; }
@@ -2732,6 +2734,17 @@ p, a {
           height: 10px; }
         .home .skills_section .column a:hover {
           color: #051c2b; }
+  .home .review_section {
+    padding: 40px 0; }
+    .home .review_section .carousel-indicators li {
+      background-color: #ed2124; }
+    .home .review_section .carousel-item {
+      min-height: 250px; }
+      .home .review_section .carousel-item img {
+        width: auto; }
+        @media screen and (max-width: 768px) {
+          .home .review_section .carousel-item img {
+            width: 100%; } }
   .home .about_section {
     display: -webkit-box;
     display: -ms-flexbox;
