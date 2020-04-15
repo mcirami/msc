@@ -132,6 +132,7 @@ add_action( 'widgets_init', 'boiler_widgets_init' );
  */
 function boiler_scripts_styles() {
 	// style.css just initializes the theme. This is compiled from /sass
+	wp_enqueue_script( 'jquery' , array(), '' );
 
 	wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap/bootstrap.min.css', array(), '1.0', 'all');
 	wp_enqueue_style( 'bootstrap');
@@ -145,7 +146,7 @@ function boiler_scripts_styles() {
 	
 	// Return concatenated version of JS. If you add a new JS file add it to the concatenation queue in the gruntfile. 
 	// current files: js/vendor.mordernizr-2.6.2.min.js, js/plugins.js, js/main.js
-
+	
 	wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/js/vendor/bootstrap/bootstrap.min.js', array(), '', true );
 	wp_enqueue_script('bootstrap-js');
 
@@ -185,3 +186,37 @@ function wrap_embed_with_div($html, $url, $attr) {
 add_filter('embed_oembed_html', 'wrap_embed_with_div', 10, 3);
 
 add_filter('show_admin_bar', '__return_false');
+
+function register_projects_post_type() {
+
+	register_post_type( 'Projects', // Register Custom Post Type
+		array(
+			'labels'       => array(
+				'name'               => __( 'Projects', 'Projects' ), // Rename these to suit
+				'singular_name'      => __( 'Project', 'Projects' ),
+				'add_new'            => __( 'Add New Project', 'Projects' ),
+				'add_new_item'       => __( 'Add New Project', 'Projects' ),
+				'edit'               => __( 'Edit Project', 'Projects' ),
+				'edit_item'          => __( 'Edit Project', 'Projects' ),
+				'new_item'           => __( 'New Project', 'Projects' ),
+				'view'               => __( 'View Project', 'Projects' ),
+				'view_item'          => __( 'View Project', 'Projects' ),
+				'search_items'       => __( 'Search Projects', 'Projects' ),
+				'not_found'          => __( 'No Project found', 'Projects' ),
+				'not_found_in_trash' => __( 'No Project found in Trash', 'Projects' )
+			),
+			'public'       => true,
+			'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+			'has_archive'  => true,
+			'supports'     => array(
+				'title',
+				'editor',
+				'excerpt',
+				'thumbnail',
+				'comments'
+			), // Go to Dashboard Custom HTML5 Blank post for supports
+			'can_export'   => true, // Allows export in Tools > Export
+		) );
+}
+
+add_action('init', 'register_projects_post_type');
