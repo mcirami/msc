@@ -134,10 +134,10 @@ function boiler_scripts_styles() {
 	// style.css just initializes the theme. This is compiled from /sass
 	wp_enqueue_script( 'jquery' , array(), '' );
 
-	wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap/bootstrap.min.css', array(), '1.0', 'all');
+	wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap/bootstrap.min.css', array(), '1.1', 'all');
 	wp_enqueue_style( 'bootstrap');
 
-    wp_register_style('main-style', get_template_directory_uri() . '/css/main.min.css', array(), '1.0', 'all');
+    wp_register_style('main-style', get_template_directory_uri() . '/css/main.min.css', array(), '1.1', 'all');
 	wp_enqueue_style( 'main-style');
 
 	//wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2.min.js', array(), '2.6.2');
@@ -147,7 +147,7 @@ function boiler_scripts_styles() {
 	// Return concatenated version of JS. If you add a new JS file add it to the concatenation queue in the gruntfile. 
 	// current files: js/vendor.mordernizr-2.6.2.min.js, js/plugins.js, js/main.js
 	
-	wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/js/vendor/bootstrap/bootstrap.min.js', array(), '', true );
+	wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/js/vendor/bootstrap/bootstrap.min.js', array(), '1.1', true );
 	wp_enqueue_script('bootstrap-js');
 
 	wp_register_script( 'popper-js', get_template_directory_uri() . '/js/vendor/popper.js/dist/popper.min.js', array(), '', true );

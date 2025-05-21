@@ -240,7 +240,7 @@
 	}
 	
 	.logo_wrap {
-		width: 100px;
+		width: 200px;
 		float: left;
 		-webkit-transition: all .35s ease 0s;
 		-moz-transition: all .35s ease 0s;
@@ -252,7 +252,7 @@
 		}
 		
 		&.scroll {
-			width: 75px;
+			width: 125px;
 			
 			@include media($mobile){
 				width: 80px;
